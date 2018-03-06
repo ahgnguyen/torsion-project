@@ -1,0 +1,75 @@
+body {
+	font-family: sans-serif;
+}
+
+.btn {
+	height: 200px;
+	width: 250px;
+	font-size: 24pt;
+}
+
+#degrees {
+	margin: 0 150px;
+	font-size: 196pt;
+	padding: 200px;
+	text-align: center;
+}
+
+.track {
+	text-align: center;
+}	
+
+.value {
+	height: 250px;
+	width: 450px;
+	font-size: 1000%;
+	text-align: center;
+}
+
+.buttons {
+	text-align: center;
+	padding: 75px
+}
+
+.function {
+	font-size: 72px;
+	font-weight: 100;
+}
+
+.divider {
+	width: 100px;
+	height: auto;
+	display: inline-block;
+}
+
+#zero {
+	height: 350px;
+	width: 350px;
+}
+
+#record {
+	height: 350px;
+	width: 350px;
+	border-radius: 750px
+}
+
+/*
+#image {
+	position: relative;
+	width: 50px;	
+	margin: 0 200px;
+}
+
+#circle {
+	position: relative;
+	top: 0;
+	left: 0;
+	transform: rotate(90deg);
+}
+
+#needle {
+	position: absolute;
+	top: 6px;
+	left: 58.75px;
+}
+*/
