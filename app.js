@@ -1,4 +1,3 @@
-// var circle = document.getElementById("circle");
 var data = document.getElementById("data");
 var record = document.getElementById("record");
 var zero = document.getElementById("zero");
@@ -6,9 +5,6 @@ var degrees = document.getElementById("degrees");
 var adjusted = 0;
 var zeroAdjust = 0;
 var currAlpha = 0;
-var samples = [];
-var sum = 0;
-var numSamples = 20;
 
 if (window.DeviceOrientationEvent) {
 	console.log("DeviceOrientation is supported");
@@ -24,23 +20,6 @@ function handleOrientation(event) {
  	document.getElementById("doTiltFB").innerHTML = Math.round(beta);
  	document.getElementById("doTiltLR").innerHTML = Math.round(gamma);
 	document.getElementById("zeroAdjust").innerHTML = zeroAdjust;
-	
-	// alpha -= zeroAdjust;
-	// currAlpha = alpha;
-
-	// rotate = alpha;
-	// degrees.style.transform = "rotate(" + rotate + "deg)";
-	
-	// sum += alpha;
-	// if (numsamples > 0) {
-	// 	samples.push(alpha);
-	// 	numSamples--;
-	// } else {
-	// 	samples.push(alpha);
-	// 	var remove = samples.shift();
-	// 	sum -= remove;
-	// 	alpha = sum / 20;
-	// }
 
 	adjusted = Math.round(alpha - zeroAdjust);
 	currAlpha = alpha;
@@ -56,8 +35,9 @@ function handleOrientation(event) {
 	} else if (adjusted <= -180 && adjusted > -360)  {
 		adjusted = -360 - adjusted; 
 	}
+
 	degrees.innerHTML = Math.round(adjusted); 
-	degrees.style.transform = "rotate(" + adjusted + "deg)";
+	degrees.style.transform = "rotate(" + adjusted * -1 + "deg)";
 }
 
 record.addEventListener("click", function() {
@@ -68,4 +48,3 @@ record.addEventListener("click", function() {
 zero.addEventListener("click", function() {
 	zeroAdjust = currAlpha;
 });
-	

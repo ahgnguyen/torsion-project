@@ -29,6 +29,7 @@ body {
 .buttons {
 	text-align: center;
 	padding: 75px
+	padding-bottom: 200px;
 }
 
 .function {
@@ -52,24 +53,3 @@ body {
 	width: 350px;
 	border-radius: 750px
 }
-
-/*
-#image {
-	position: relative;
-	width: 50px;	
-	margin: 0 200px;
-}
-
-#circle {
-	position: relative;
-	top: 0;
-	left: 0;
-	transform: rotate(90deg);
-}
-
-#needle {
-	position: absolute;
-	top: 6px;
-	left: 58.75px;
-}
-*/
