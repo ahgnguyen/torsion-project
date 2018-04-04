@@ -1,11 +1,18 @@
 body {
 	font-family: sans-serif;
 }
+/**********
+ * Data   *
+ **********/
+.track {
+	text-align: center;
+}
 
-.btn {
-	height: 200px;
-	width: 250px;
-	font-size: 24pt;
+.value {
+	height: 250px;
+	width: 450px;
+	font-size: 1000%;
+	text-align: center;
 }
 
 #degrees {
@@ -15,15 +22,15 @@ body {
 	text-align: center;
 }
 
-.track {
-	text-align: center;
-}	
+/***********
+ * Buttons *
+ ***********/
 
-.value {
-	height: 250px;
-	width: 450px;
-	font-size: 1000%;
-	text-align: center;
+.btn {
+	height: 350px;
+	width: 350px;
+	font-size: 72px;
+	font-weight: 100;
 }
 
 .buttons {
@@ -32,24 +39,12 @@ body {
 	padding-bottom: 200px;
 }
 
-.function {
-	font-size: 72px;
-	font-weight: 100;
-}
-
 .divider {
 	width: 100px;
 	height: auto;
 	display: inline-block;
 }
 
-#zero {
-	height: 350px;
-	width: 350px;
-}
-
 #record {
-	height: 350px;
-	width: 350px;
 	border-radius: 750px
 }
